@@ -21,6 +21,7 @@
   ],
   "scripts": {
     "compile": "tsc -b ./tsconfig.json",
+    "postcompile": "npm run webpack",
     "postversion": "npm run save_version && git add . && git commit -m \"auto: version update\"",
     "save_version": "echo export const Version = \"%npm_package_version%\" > ./src/lib/Version.ts",
     "test": "mocha -r ts-node/register '**/*.test.ts'",
