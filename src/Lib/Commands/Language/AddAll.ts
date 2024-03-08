@@ -1,11 +1,11 @@
 import { BehaviorPack, ResourcePack } from "bc-minecraft-bedrock-project";
-import { WorldPack } from "bc-minecraft-bedrock-project/lib/src/lib/Project/World/WorldPack";
 import { ExecuteCommandParams, TextDocumentEdit, TextEdit } from "vscode-languageserver";
 import { HandleError } from '../../Code/Error';
 import { Console } from '../../Manager/Console';
 import { Manager } from "../../Manager/Manager";
 import { GetDocument } from "../../Types/Document/Document";
 import { TextDocument } from "../../Types/Document/TextDocument";
+import { WorldPack } from "bc-minecraft-bedrock-project/lib/src/Lib/Project/World";
 
 export function AddAllItems(params: ExecuteCommandParams): any {
   const args = params.arguments;

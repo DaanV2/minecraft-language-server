@@ -3,9 +3,9 @@ import { Console } from "../Manager";
 import { Database } from "../Database/Database";
 import { DocumentSymbolParams, SymbolInformation, SymbolKind, WorkspaceSymbolParams } from "vscode-languageserver";
 import { Fs, GetDirectory, GetFilename, Vscode } from "../Code";
-import { GeneralInfo } from "bc-minecraft-bedrock-project/lib/src/lib/Project/General/Types";
 import { Kinds } from "../Minecraft/General/Kinds";
 import { SymbolBuilder } from "./SymbolBuilder";
+import { GeneralInfo } from "bc-minecraft-bedrock-project/lib/src/Lib/Project/General/Types";
 
 /**
  * The request to provide document symbols

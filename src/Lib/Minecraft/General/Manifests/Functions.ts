@@ -6,7 +6,7 @@ import { Version } from "../../../Version";
 import { HandleError } from "../../../Code/Error";
 import { Manager } from "../../../Manager/Manager";
 import { Pack } from "bc-minecraft-bedrock-project";
-import { Manifest } from "bc-minecraft-bedrock-project/lib/src/lib/Internal/Types";
+import { Manifest } from "bc-minecraft-bedrock-project/lib/src/Lib/Internal/Types";
 import * as JSONC from "comment-json";
 import { ToolIdentification } from "../../../../shared";
 

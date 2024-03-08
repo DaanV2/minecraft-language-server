@@ -16,12 +16,15 @@
     "url": "https://github.com/Blockception/VSCode-Bedrock-Development-Extension",
     "type": "git"
   },
+  "files": [
+    "./dist/**/*"
+  ],
   "scripts": {
     "compile": "tsc -b ./tsconfig.json",
-    "test": "mocha -r ts-node/register '**/*.test.ts'",
-    "update": "npm update && npm audit fix",
     "postversion": "npm run save_version && git add . && git commit -m \"auto: version update\"",
     "save_version": "echo export const Version = \"%npm_package_version%\" > ./src/lib/Version.ts",
+    "test": "mocha -r ts-node/register '**/*.test.ts'",
+    "update": "npm update && npm audit fix",
     "watch": "tsc -b ./tsconfig.json -w",
     "webpack": "webpack --mode production --config ./webpack.config.js"
   },
