@@ -21,7 +21,9 @@
     "test": "mocha -r ts-node/register '**/*.test.ts'",
     "update": "npm update && npm audit fix",
     "postversion": "npm run save_version && git add . && git commit -m \"auto: version update\"",
-    "save_version": "echo export const Version = \"%npm_package_version%\" > ./src/Lib/Version.ts"
+    "save_version": "echo export const Version = \"%npm_package_version%\" > ./src/Lib/Version.ts",
+    "watch": "tsc -b ./tsconfig.json -w",
+    "webpack": "webpack --mode production --config ./webpack.config.js"
   },
   "dependencies": {
     "@daanv2/queue-processor": "^2.2.1",

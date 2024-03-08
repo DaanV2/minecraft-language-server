@@ -2,7 +2,7 @@ import { InitializeParams, InitializeResult, TextDocumentSyncKind } from "vscode
 import { Manager } from "../Manager/Manager";
 import { Console } from "../Manager/Console";
 import { Version } from "../Version";
-import { Commands } from "../../shared";
+import { Commands, Languages } from "../../shared";
 
 export async function onInitializeAsync(params: InitializeParams): Promise<InitializeResult> {
   return Promise.resolve(onInitialize(params));
@@ -71,12 +71,12 @@ export function onInitialize(params: InitializeParams): InitializeResult {
       implementationProvider: {
         documentSelector: [
           { scheme: "file", language: Languages.JsonCIdentifier },
-          { scheme: "file",language: Languages.JsonIdentifier },
-          { scheme: "file",language: Languages.McFunctionIdentifier },
-          { scheme: "file",language: Languages.McLanguageIdentifier },
-          { scheme: "file",language: Languages.McMolangIdentifier },
-          { scheme: "file",language: Languages.McOtherIdentifier },
-          { scheme: "file",language: Languages.McProjectIdentifier },
+          { scheme: "file", language: Languages.JsonIdentifier },
+          { scheme: "file", language: Languages.McFunctionIdentifier },
+          { scheme: "file", language: Languages.McLanguageIdentifier },
+          { scheme: "file", language: Languages.McMolangIdentifier },
+          { scheme: "file", language: Languages.McOtherIdentifier },
+          { scheme: "file", language: Languages.McProjectIdentifier },
         ],
       },
 
